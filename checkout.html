@@ -359,15 +359,15 @@ RIGHT SIDEBAR TOGGLE SECTION
 				<div class="module form-module">
 				  <div class="form">
 					<h2>Login to your account</h2>
-					<form action="#" method="post">
+					<form action="#" method="get" onsubmit="return false;">
 					  <input type="text" name="Username" placeholder="Username" required=" ">
 					  <input type="password" name="Password" placeholder="Password" required=" ">
-					  <input type="submit" value="Login">
+					  <button type="button" id="login-submit" class="btn btn-danger">Login</button>
 					</form>
 				  </div>
 				  <div class="form">
 					<h2>Enter Payment Details </h2>
-					<form action="#" method="post">
+					<form action="#" method="get" onsubmit="return false;">
 					  <input type="text" name="Username" placeholder="Username" required=" ">
 					  <input type="email" name="Email" placeholder="Email Address" required=" ">
 					  <input type="text" name="Phone" placeholder="Phone Number" required=" ">
@@ -389,7 +389,7 @@ RIGHT SIDEBAR TOGGLE SECTION
 					    <label for="html">Easypaisa</label><br>
 					  <input type="radio" id="html" name="fav_language" value="HTML">
 					    <label for="html">Paypal</label><br><br>
-					  <button type="submit" style="text-align: center; margin-left: 130px;">Submit</button>
+					  <button type="button" id="payment-submit" class="btn btn-danger" style="text-align: center; margin-left: 130px;">Submit</button>
 					  <br><br>
 					  <div style="margin-left:220px;"><a href="index.html">Home Page</a></div>
 					</form>
@@ -409,6 +409,22 @@ RIGHT SIDEBAR TOGGLE SECTION
 					opacity: "toggle"
 				  }, "slow");
 				});
+
+				// Prevent server submission; demo-only handlers
+				(function(){
+				  var loginBtn = document.getElementById('login-submit');
+				  var payBtn = document.getElementById('payment-submit');
+				  if (loginBtn) {
+					loginBtn.addEventListener('click', function(){
+					  alert('Login is a demo-only action. No server request made.');
+					});
+				  }
+				  if (payBtn) {
+					payBtn.addEventListener('click', function(){
+					  alert('Payment is a demo-only flow. No server request made.');
+					});
+				  }
+				})();
 			</script>
 		</div>
 <!-- //login -->
