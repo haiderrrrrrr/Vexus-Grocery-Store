@@ -1,0 +1,24 @@
+# OS-specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors/IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Node & tooling (if added later)
+node_modules/
+dist/
+build/
+
+# Temp/cache
+*.tmp
+*.cache
+
+# Env files (if introduced)
+.env
+.env.*
