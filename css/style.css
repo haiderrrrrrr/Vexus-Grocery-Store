@@ -4863,3 +4863,24 @@ input.checkbox:checked:after {
 		font-size: 13px;
 	}
 }
+/* Overrides for header link-based cart button and minicart submit */
+.product_list_header .button {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #2fdab8;
+  color: #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.product_list_header .button:hover {
+  background: #25c1a2;
+  color: #fff;
+}
+
+#PPMiniCart .minicart-submit {
+  background: #2fdab8 !important;
+  border: none !important;
+  color: #fff !important;
+  text-shadow: none !important;
+}
