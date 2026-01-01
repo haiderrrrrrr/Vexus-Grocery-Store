@@ -1,4 +1,3 @@
-
 html, body{
     font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
@@ -74,7 +73,8 @@ input[type="submit"],#PPMiniCart .minicart-submit,.w3ls_vegetables ul li a,input
 	-ms-transition: .5s ease-in;
 }
 .agileits_header{
-	background:#212121;
+    background:#212121;
+    min-height: 44px;
 }
 .w3l_offers{
 	float:left;
@@ -4865,21 +4865,27 @@ input.checkbox:checked:after {
 }
 /* Overrides for header link-based cart button and minicart submit */
 .product_list_header .button {
-  display: inline-block;
-  padding: 8px 14px;
-  background: #2fdab8;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px;
+  height: 44px;
+  background: #84C639;
   color: #fff;
   border-radius: 4px;
   text-transform: uppercase;
   font-weight: 600;
 }
+.product_list_header .button i {
+  font-size: 14px;
+}
 .product_list_header .button:hover {
-  background: #25c1a2;
+  background: #5b951a;
   color: #fff;
 }
 
 #PPMiniCart .minicart-submit {
-  background: #2fdab8 !important;
+  background: #84C639 !important;
   border: none !important;
   color: #fff !important;
   text-shadow: none !important;

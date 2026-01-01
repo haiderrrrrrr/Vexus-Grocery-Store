@@ -1885,14 +1885,10 @@ Cart.prototype.destroy = function destroy() {
     this.fire('destroy');
 };
 
-
-
-
 module.exports = Cart;
 
 },{"./constants":11,"./product":13,"./util/currency":15,"./util/mixin":18,"./util/pubsub":19,"./util/storage":20}],10:[function(require,module,exports){
 'use strict';
-
 
 var mixin = require('./util/mixin');
 
@@ -1924,7 +1920,6 @@ var defaults = module.exports = {
 
 
 /**
- * Mixes in the user config with the default config.
  *
  * @param {object} userConfig Configuration overrides
  * @return {object}
